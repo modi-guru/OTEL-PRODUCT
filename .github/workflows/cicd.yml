@@ -47,6 +47,7 @@ jobs:
           push: true
           platforms: linux/amd64
           tags: ${{ env.IMAGE_NAME }}:${{ env.TAG }}
+          provenance: false
 
       # 7. Update GitOps repo (CD)
       - name: Update Helm values
